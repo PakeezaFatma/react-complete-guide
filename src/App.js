@@ -1,11 +1,12 @@
-// import logo from './logo.svg';
-// import './App.css';
+
+import ExpenseItem from './component/ExpenseItem';
 
 function App() {
   return (
-    <div className="App">
+    <div >
       <h2> Let's get stateted</h2>
       <p>This is also visible</p>
+      <ExpenseItem></ExpenseItem>
     </div>
   );
 }

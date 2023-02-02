@@ -9,7 +9,9 @@ function ExpenseItem(props)
         <div className="expense-item">
             
         <ExpenseDate date={props.date}></ExpenseDate>
-        <ExpenseDetail>${props.amount}</ExpenseDetail>
+        <ExpenseDetail title ={props.title}/>
+        <ExpenseDetail amount ={props.amount}/>
+        
            
            
         </div>

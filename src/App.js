@@ -8,12 +8,14 @@ function App() {
       title: 'Toilet Paper',
       amount: 94.12,
       date: new Date(2020, 7, 14),
-      expenditure:'Delhi'
+      expenditure:'Delhi',
+      expenseDetail:'Food'
     },
     { id: 'e2', title: 'New TV', 
     amount: 799.49, 
     date: new Date(2021, 2, 12), 
-    expenditure:'Hyderabad'
+    expenditure:'Hyderabad',
+    expenseDetail:'Movie'
   },
 
     {
@@ -21,21 +23,23 @@ function App() {
       title: 'Car Insurance',
       amount: 294.67,
       date: new Date(2021, 2, 28),
-      expenditure:'Kolkata'
+      expenditure:'Kolkata',
+      expenseDetail:'Books'
     },
     {
       id: 'e4',
       title: 'New Desk (Wooden)',
       amount: 450,
       date: new Date(2021, 5, 12),
-      expenditure:'Delhi'
+      expenditure:'Delhi',
+      expenseDetail:'Stationary'
     },
   ];
 
   return (
     <div >
       <h2> Let's get stateted</h2>
-      <p>This is also visible</p>
+      <p>This is also visible1</p>
       
       {
         expenses.map(expense =>(
@@ -43,7 +47,7 @@ function App() {
         title={expense.title} 
         amount={expense.amount}
         date={expense.date}
-        expenditure={expense.expenditure}
+        
         >
            </ExpenseItem>
         ))

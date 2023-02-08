@@ -1,5 +1,5 @@
-
-import ExpenseItem from './component/ExpenseItem';
+import './App.css'
+import Expenses from './component/Expenses';
 
 function App() {
   const expenses = [
@@ -35,20 +35,9 @@ function App() {
   return (
     <div >
       <h2> Let's get stateted</h2>
-      <p>This is also visible1</p>
       
-      {
-        expenses.map(expense =>(
-          <ExpenseItem 
-        title={expense.title} 
-        amount={expense.amount}
-        date={expense.date}
-        
-        >
-           </ExpenseItem>
-        ))
-        
-      }
+      
+      <Expenses items={expenses}/>
       
       
     </div>

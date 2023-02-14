@@ -17,11 +17,12 @@ import ExpensesFilter from "./ExpenseFilter";
      
         <Card className='expenses' >
         <ExpensesFilter selected ={filterYear} onChangeHandler={filterChangeHandler}/>
+    
     {
       
         props.items.map(expense =>(
           <ExpenseItem 
-        title={expense.title} 
+        title={ expense.title} 
         amount={expense.amount}
         date={expense.date}
         

@@ -20,6 +20,7 @@ const Expenses = (props) => {
           onChangeFilter={filterChangeHandler}
         />
         {filteredExpenses.length === 0 && <p>No expenses Found.</p>}
+        {filteredExpenses.length === 1 && <p>Only single Expense here. Please add more..."</p>}
         {filteredExpenses.length > 0 &&(
         filteredExpenses.map((expense) => (
           <ExpenseItem

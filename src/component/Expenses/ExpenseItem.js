@@ -8,11 +8,13 @@ const ExpenseItem =(props)  =>{
 
  
   return (
+    <li>
     <Card className="expense-item">
       <ExpenseDate date={props.date}></ExpenseDate>
       <ExpenseDetail title={props.title} amount={props.amount} /> 
       
     </Card>
+    </li>
   );
 }
 export default ExpenseItem;
